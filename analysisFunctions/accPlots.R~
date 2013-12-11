@@ -1,0 +1,6 @@
+library(ggplot2)
+
+acc.base <- ggplot(work.Acc)
+acc.base + layer(geom = "barplot",
+                 aes(x = COND, y = Corr,
+                 fun.y = "mean", stat = "identity"))
